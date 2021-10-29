@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    color: white;
+    font-family: 'Lexen Deca', sans-serif;
+}
+
+.font-big-shoulders{
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.font-lexen-deca{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.bg-orange{
+    background-color:hsl(31, 77%, 52%)
+}
+
+.bg-cyan{
+    background-color:hsl(184, 100%, 22%)
+}
+
+.bg-dark-cyan{
+    background-color:hsl(179, 100%, 13%)
+}
+
+body{
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+main{
+    background-color: rgba(12,25,96,.5);
+    width: 75%;
+    height: 50vh;
+    display: flex;
+}
+
+.card{
+    border: 1px solid peru;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img{
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.card h2{
+    margin-bottom: 1rem;
+}
+
+.card button{
+    margin-top: auto;
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius:50px;
+    background: none;
+}
+
