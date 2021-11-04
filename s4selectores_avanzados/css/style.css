@@ -1,107 +1,32 @@
-.element{
-    width: 100px;
-    height: 100px;
-    background-color: peru;
-    transition:all 2s ease-out;
-}
+/*Selecciona la primer sección que se encuentre dentro de una etiqueta main*/
 
-/*.element:hover{
-    border-radius: 100%;
+/*main section{
+    color: red;
+    font-size: 20px;
 }*/
 
-#test-list li:first-of-type{
-    color:peru
+/*main > section {
+    color: red;
+    font-size: 20px;
+}*/
+/*
+main section:first-of-type{
+    color: red;
+    font-size: 20px;
+}
+*/
+main > section:first-of-type{
+    color: red;
+    font-size: 20px;
 }
 
-#test-list li:last-of-type{
-    color:navy
-}
-
-#test-list li:nth-of-type(5){
-    text-decoration: underline;
-}
-
-#test-list li:nth-of-type(3n){
+*[class*="btn"]{
     text-transform: uppercase;
 }
 
-#test-list li:nth-of-type(even){
-    background:pink;
-}
-
-#test-list li:nth-of-type(odd){
-    background:yellow;
-}
-
-#my-check{
-    width: 30px;
-    height: 30px;
-}
-
-#my-check:checked{
-    width: 15px;
-    height: 15px;
-}
-
-#my-check:checked + .element{
-    border-radius: 100%;
-}
-
-#my-check:checked ~ .element{
-    background-color: navy;
-}
-
-
-input[value*="l"]{
-    background-color: red;
-}
-
-*[class^="a"]{
-    font-size: 3rem;
-}
-
-button.transitioned{
-    padding: .5rem 1rem;
-    border: none;
-    color: white;
-    background-color: #333;
-    border: 1px solid #333;
-    transition: all 1s ease;
-}
-
-button.transitioned:hover{
-    background-color: white;
-    color: #333;
-}
-
-.gemini-saga{
-    filter: grayscale(1) blur(5px);
-    transition: all 1s ease;
-}
-
-.gemini-saga:hover{
-    filter: grayscale(0) blur(0);
-}
-
-.user-card{
-    border: 1px solid #333;
-    border-radius:.8rem;
+.flush{
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20vw;
 }
-
-.user-card img{
-    width: 50%;
-    border-radius: 100%;
-    filter: grayscale(1);
-    transition: all 1s ease;
+.flush li:not(:last-of-type){
+    border-bottom:1px solid #333
 }
-
-.user-card:hover img{
-    filter:grayscale(0);
-}
-
-
