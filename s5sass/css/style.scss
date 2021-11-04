@@ -82,8 +82,16 @@ nav{
     flex-direction: column;
 }
 
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+}
 .card{
     @include custom-wrapper(#333);
+    margin:0 1rem 1rem 1rem;
     img{
         width: 50%;
         margin:0 auto;
@@ -114,3 +122,28 @@ nav{
 .post-detail{
     @include custom-wrapper(#333)
 }
+
+@media only screen and ( min-width: 768px ) {
+    .card-wrapper{
+        flex-wrap: wrap;
+        flex-direction:row;
+    }
+    .card{
+        width:calc( 50% - 2rem)
+    }
+}
+
+@media only screen and ( min-width: 992px ){
+    .card-wrapper{
+        flex-wrap: nowrap;
+    }
+}
+
+/*
+ mobile 0 < 768
+ tablet 768 < 992
+ desktop > 992
+ */
+
+
+
